@@ -27,3 +27,4 @@ b1: reset camera position to origin ("A" button)
 
 - Dinput controllers are not currently supported.
 - In this patch camera speed is influenced by frame drops. When recording make sure that no frame drop happens. Only then the playback speed will match camera movement speed at recording.
+- The heading direction ignores rotation of the camera on the X axis so you can look around but won’t fly off in the direction you are looking if its up or down.
