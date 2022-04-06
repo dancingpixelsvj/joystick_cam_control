@@ -34,7 +34,7 @@ b1: reset camera position to origin ("A" button)
 
 ## Notes
 
-- Dinput controllers are not currently supported.
-- Some controllers (like Xiaomi) have been reported to not map left and right triggers to zaxis channel on Joystick CHOP, but to slider 1 and 2 channels. In that case inside joypad_control.tox you'll need to swap the thread coming out of select1 CHOP and connect null_slider_control (end of yellow chain) to null_controller_input instead.
-- In this patch camera speed is influenced by frame drops. When recording make sure that no frame drop happens. Only then the playback speed will match camera movement speed at recording.
-- The heading direction ignores rotation of the camera on the X axis so you can look around but won’t fly off in the direction you are looking if its up or down.
+1. Dinput controllers are not currently supported.
+2. Some controllers (like Xiaomi) have been reported to not map left and right triggers to zaxis channel on Joystick CHOP, but to slider 1 and 2 channels. In that case inside joypad_control.tox you'll need to swap the thread coming out of select1 CHOP and connect null_slider_control (end of yellow chain) to null_controller_input instead.
+3. In this patch camera speed is influenced by frame drops. When recording make sure that no frame drop happens. Only then the playback speed will match camera movement speed at recording.
+4. The heading direction ignores rotation of the camera on the X axis so you can look around but won’t fly off in the direction you are looking if its up or down.
